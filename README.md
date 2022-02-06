@@ -11,7 +11,7 @@
 # SEPET İŞLEMLERİ
 ![Angular - AlışverişSepetiBoş](https://user-images.githubusercontent.com/81426353/152665544-bf09e10e-1b0e-4d96-bba6-a68e35955a91.JPG)
 
-![Angular - AlışverişSepetiBoş](https://user-images.githubusercontent.com/81426353/152665546-540156bc-7c04-45fd-a5c4-d4d6a42b1765.JPG)
+![Angular - AlışverişSepetiDolu](https://user-images.githubusercontent.com/81426353/152665620-7e95c57f-82ab-4899-acbf-53a23c6ab1e2.JPG)
 
 # YENİ ÜRÜN ve KATEGORİ EKLEMEK İÇİN ADMİN PANELİ
 
