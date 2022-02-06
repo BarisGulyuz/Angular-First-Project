@@ -1,5 +1,7 @@
 # ANGULAR | İlk Projem - Mini Store App
 
+[ANGULAR |İlk Proejem : Mini Store App](https://www.youtube.com/watch?v=zzXe8K7IQ9U)
+
 # ANASAYFA
 
 ![Angular - Anasayfa](https://user-images.githubusercontent.com/81426353/152665529-6b6192d7-7ac5-43c2-9a16-beb955d9cb9c.JPG)
