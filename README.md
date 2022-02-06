@@ -1,6 +1,6 @@
 # ANGULAR | İlk Projem - Mini Store App
 
- ->Video Link = [ANGULAR |İlk Proejem : Mini Store App](https://www.youtube.com/watch?v=zzXe8K7IQ9U)
+ Video Link = [ANGULAR |İlk Proejem : Mini Store App](https://www.youtube.com/watch?v=zzXe8K7IQ9U)
 
 # ANASAYFA
 
