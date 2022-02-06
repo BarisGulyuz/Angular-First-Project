@@ -17,5 +17,5 @@
 
 ![Angular - Admin Paneli](https://user-images.githubusercontent.com/81426353/152665547-54d619af-d451-4d1a-9489-afa04a604df5.JPG)
 
-![Angular - KategoriEkleme](https://user-images.githubusercontent.com/81426353/152665680-6953221a-2ab0-4607-85a0-34405c31a79a.JPG) ![Angular - ÜrünEkleme](https://user-images.githubusercontent.com/81426353/152665681-b1a9db38-61d5-4269-9895-4f7d64ebc148.JPG)
+![Angular - ÜrünEkleme](https://user-images.githubusercontent.com/81426353/152665681-b1a9db38-61d5-4269-9895-4f7d64ebc148.JPG)
 
