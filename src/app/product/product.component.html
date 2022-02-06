@@ -1,0 +1,50 @@
+<app-carousel></app-carousel>
+<app-category></app-category>
+<div class="container">
+  <div id="search" class="mb-3">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label> <i class="fa fa-search"></i> Aranacak kelimeyi yazınız... </mat-label>
+      <input [(ngModel)]="filterText" matInput>
+    </mat-form-field>
+    <small *ngIf="filterText"> Şuan <strong>{{filterText}}</strong> araması yaptnız. </small>
+  </div>
+  <div *ngIf="(products | productSearchPipe:filterText) as results" class="row">
+    <div *ngFor="let product of products | productSearchPipe:filterText" class="col-4 mb-3">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{product.name}}</mat-card-title>
+          <mat-card-title><span style="font-size: 13px;" class="badge bg-success">{{product.price |currency}}</span>
+          </mat-card-title>
+        </mat-card-header>
+        <img class="card-img" mat-card-image src="{{product.imageUrl}}">
+        <mat-card-content>
+          <p id="card-desc">
+            {{product.description}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <div>
+            <div class="row">
+              <div class="col-6"> <button color="primary" (click)="addToCart(product.name, product.price)"
+                id="add-to-card" mat-button style="font-size: 16px;"> <i class="fa fa-eye"></i> Görüntüle
+              </button>
+            </div>
+              <div class="col-6"> <button color="primary" (click)="addToCart(product.name, product.price)"
+                  id="add-to-card" mat-button style="font-size: 16px;"> <i class="fa fa-shopping-cart"></i> Sepete Ekle
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <div *ngIf="results.length == 0" style="font-size: 18px;" class="alert alert-danger">
+      <span> <i class="fa fa-exclamation-triangle"></i> <strong> {{filterText}}</strong> Arama sonucuna uygun ürün
+        bulunamadı. </span>
+    </div>
+
+
+  </div>
+</div>

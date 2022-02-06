@@ -1,0 +1,30 @@
+#add-to-card{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 504000px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  #search{
+    font-size: 20px;
+  }
+
+  .card-img{
+    width: 100%;
+    height: 300px;
+  }
+  #card-desc{
+    width: 100%;
+    height: 80px;
+  }
+
+ 

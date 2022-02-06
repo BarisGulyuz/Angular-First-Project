@@ -1,0 +1,6 @@
+<div class="container">
+  <nav class="nav justify-content-center align-center  d-flex p-5">
+    <a routerLink="/products" class="p2 link secondary nav-link">Tüm Ürünler</a>
+    <a routerLink="/product/category/{{category.id}}" *ngFor="let category of categoryService.categories" class="p-3 link-secondary nav-link"><i class="fa fa-star" style="margin-right: 5px;"></i> {{category.name}}</a>
+  </nav>
+</div>

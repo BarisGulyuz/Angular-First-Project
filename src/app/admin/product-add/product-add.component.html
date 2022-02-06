@@ -1,0 +1,38 @@
+<h2><i class="fa fa-plus"></i> Ürün Ekle</h2>
+<mat-dialog-content class="mat-typography">
+    <form [formGroup]="productForm">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Ürün Adı</mat-label>
+            <input matInput formControlName="name">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Kategori</mat-label>
+            <mat-select formControlName="categoryId">
+                <mat-option *ngFor="let category of categoryService.categories" [value]="category.id">
+                    {{category.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Açıklama</mat-label>
+            <textarea matInput formControlName="description"></textarea>
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Ürün Görsel</mat-label>
+            <input matInput formControlName="imageUrl">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Fiyat</mat-label>
+            <input matInput formControlName="price">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Mevcut Stok</mat-label>
+            <input matInput formControlName="stock">
+        </mat-form-field>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close><span class="fa fa-close"></span> İptal</button>
+    <button [disabled]="productForm.invalid" mat-button (click)="addProduct()"> <span class="fa fa-save"></span> Kaydet
+        ve Devam Et</button>
+</mat-dialog-actions>

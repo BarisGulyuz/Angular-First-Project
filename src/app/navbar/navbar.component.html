@@ -1,0 +1,26 @@
+<header>
+    <mat-toolbar color="primary">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <span style="margin-right: 10px;">Mini Store App</span>
+        <span class="example-spacer"></span>
+        <button (click)="openCart()" *ngIf="cartValue" class="btn btn-outline-primary text-white" style="font-size: 16px;">
+            <i class="fa fa-shopping-cart"></i> Sepeti Göster ({{cartService.cartItems.length}} Adet Ürün) </button>
+        <!-- Modal -->
+        <span class="example-spacer"></span>
+        <ul class="header-menu">
+            <li>
+                <a (click)="setCartValueTrue()" routerLink="home" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">Anasayfa</a>
+            </li>
+            <li>
+                <a (click)="setCartValueTrue()" routerLink="products" routerLinkActive="active">Ürünler</a>
+            </li>
+            <li>
+                <a (click)="setCartValueTrue()" routerLink="admin" routerLinkActive="active">Admin Paneli</a>
+            </li>
+        </ul>
+    </mat-toolbar>
+</header>

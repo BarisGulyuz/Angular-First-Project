@@ -1,0 +1,17 @@
+<h2><i class="fa fa-plus"></i> Kategori Ekle</h2>
+<mat-dialog-content class="mat-typography">
+    <form [formGroup]="categoryForm">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Kategori Adı</mat-label>
+          <input matInput formControlName="name">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Açıklama</mat-label>
+          <textarea matInput formControlName="description"></textarea>
+        </mat-form-field>
+      </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close><span class="fa fa-close"></span> İptal</button>
+    <button [disabled]="categoryForm.invalid" mat-button (click)="addCategory()" > <span class="fa fa-save"></span> Kaydet ve Devam Et</button>
+ </mat-dialog-actions>

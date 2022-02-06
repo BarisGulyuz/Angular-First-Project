@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Adı</th>
+                    <th>Fiyatı</th>
+                    <th>Stok Miktarı</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of productService.products">
+                    <td>{{product.id}}</td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.price |currency}}</td>
+                    <td>{{product.stock}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

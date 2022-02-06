@@ -1,0 +1,35 @@
+
+<h2><i class="fa fa-shopping-cart"></i> ALIŞVERİŞ SEPETİ</h2>
+<mat-dialog-content class="mat-typography">
+    <table *ngIf="cartService.cartItems.length > 0; else noCartItem" class="table table-striped">
+        <!-- <h3><strong>Sepet Toplamı : {{cartService.totalPrice |currency}}</strong> </h3> -->
+            <tr *ngFor="let cartItem of cartService.cartItems">
+                <td>
+                    <span><strong>{{cartItem.productName}}</strong></span>
+                </td>
+                <td>
+                    <span><strong>{{cartItem.quantity}} Adet</strong></span>
+                </td>
+                <td>
+                    <span><strong>{{cartItem.price | currency}}</strong></span>
+                </td>
+                <td class="example-button-container">
+                    <div id="btn" class="example-button-container">
+                        <button (click)="remove(cartItem.id)" mat-fab color="warn" aria-label="Example icon button with a delete icon">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+    </table>
+    <div *ngIf="cartService.cartItems.length > 0" class="col-12">   
+        <button mat-button mat-dialog-close class="w-100" style="font-size: 15px;" color="primary"><strong><i class="fa fa-check"></i> Sepeti Onayla</strong></button>
+  </div>
+    <ng-template #noCartItem>
+        <div class="alert alert-danger mt-3">
+          <strong><i class="fa fa-exclamation-triangle"></i></strong> Sepeteniz henüz boş. Haydi Ne Duruyorsun? Ürün Ekle :)
+        </div>
+        <button mat-button mat-dialog-close class="w-100"  color="primary"><strong><span class="fa fa-plus"></span> Ürün Ekle</strong></button>
+    </ng-template>
+    
+</mat-dialog-content>
