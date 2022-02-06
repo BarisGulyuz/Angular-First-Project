@@ -1,1 +1,1 @@
-# ANGULAR | First Project - Mini Store App
+# ANGULAR | İlk Projem - Mini Store App
